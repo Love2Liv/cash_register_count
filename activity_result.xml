@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ResultActivity">
+
+        <TextView
+            android:id="@+id/app_name_textView_2"
+            style="@style/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/app_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/totalLabelTextView"
+            style="@style/header_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/total_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/app_name_textView_2" />
+
+        <View
+            android:id="@+id/view"
+            style="@style/horizontal_rule_1"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/oneHundredDollarsTextView" />
+
+        <Button
+            android:id="@+id/backButton"
+            style="@style/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/back_button"
+            android:onClick="goBack"
+            android:text="@string/back_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/view_3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_3" />
+
+        <TextView
+            android:id="@+id/nickelsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            style="@style/nickels_style"
+            android:text="@string/nickels_label_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/totalLabelTextView" />
+
+        <TextView
+            android:id="@+id/dimesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            style="@style/dimes_style"
+            android:text="@string/dimes_label_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nickelsTextView" />
+
+        <TextView
+            android:id="@+id/QuartersTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            style="@style/quarters_style"
+            android:text="@string/quarters_label_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dimesTextView" />
+
+        <TextView
+            android:id="@+id/oneDollarTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            style="@style/one_dollar_style"
+            android:text="@string/one_dollar_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/QuartersTextView" />
+
+        <TextView
+            android:id="@+id/twoDollarsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            style="@style/two_dollars_style"
+            android:text="@string/two_dollars_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/oneDollarTextView" />
+
+        <TextView
+            android:id="@+id/fiveDollarsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            style="@style/more_dollars_style"
+            android:text="@string/five_dollars_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/twoDollarsRollTextView" />
+
+        <TextView
+            android:id="@+id/tenDollarTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            style="@style/more_dollars_style"
+            android:text="@string/ten_dollars_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fiveDollarsTextView" />
+
+        <TextView
+            android:id="@+id/twentyDollarsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            style="@style/more_dollars_style"
+            android:text="@string/twenty_dollars_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tenDollarTextView" />
+
+        <TextView
+            android:id="@+id/fiftyDollarsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            style="@style/more_dollars_style"
+            android:text="@string/fifty_dollars_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/twentyDollarsTextView" />
+
+        <TextView
+            android:id="@+id/oneHundredDollarsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            style="@style/more_dollars_style"
+            android:text="@string/one_hundred_dollars_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fiftyDollarsTextView" />
+
+        <TextView
+            android:id="@+id/nickelsRollTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            style="@style/nickels_style"
+            android:text="@string/nickels_roll_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/twoDollarsTextView" />
+
+        <TextView
+            android:id="@+id/dimesRollTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            style="@style/dimes_style"
+            android:text="@string/dimes_roll_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nickelsRollTextView" />
+
+        <TextView
+            android:id="@+id/quartersRollTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            style="@style/quarters_style"
+            android:text="@string/quarters_roll_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dimesRollTextView" />
+
+        <TextView
+            android:id="@+id/oneDollarRollTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            style="@style/one_dollar_style"
+            android:text="@string/one_dollar_roll_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quartersRollTextView" />
+
+        <TextView
+            android:id="@+id/twoDollarsRollTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            style="@style/two_dollars_style"
+            android:text="@string/two_dollars_roll_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/oneDollarRollTextView" />
+
+        <TextView
+            android:id="@+id/nickelsValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            style="@style/currency_totals_style"
+            app:layout_constraintBottom_toBottomOf="@+id/nickelsTextView"
+            app:layout_constraintStart_toEndOf="@+id/nickelsTextView"
+            app:layout_constraintTop_toTopOf="@+id/nickelsTextView" />
+
+        <TextView
+            android:id="@+id/dimesValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            style="@style/currency_totals_style"
+            app:layout_constraintBottom_toBottomOf="@+id/dimesTextView"
+            app:layout_constraintStart_toEndOf="@+id/dimesTextView"
+            app:layout_constraintTop_toTopOf="@+id/dimesTextView" />
+
+        <TextView
+            android:id="@+id/quartersValueTextView"
+            android:layout_width="0dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            style="@style/currency_totals_style"
+            app:layout_constraintBottom_toBottomOf="@+id/QuartersTextView"
+            app:layout_constraintStart_toEndOf="@+id/QuartersTextView"
+            app:layout_constraintTop_toTopOf="@+id/QuartersTextView" />
+
+        <TextView
+            android:id="@+id/oneDollarValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            style="@style/currency_totals_style"
+            app:layout_constraintBottom_toBottomOf="@+id/oneDollarTextView"
+            app:layout_constraintStart_toEndOf="@+id/oneDollarTextView"
+            app:layout_constraintTop_toTopOf="@+id/oneDollarTextView" />
+
+        <TextView
+            android:id="@+id/twoDollarsValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            style="@style/currency_totals_style"
+            app:layout_constraintBottom_toBottomOf="@+id/twoDollarsTextView"
+            app:layout_constraintStart_toEndOf="@+id/twoDollarsTextView"
+            app:layout_constraintTop_toTopOf="@+id/twoDollarsTextView" />
+
+        <TextView
+            android:id="@+id/nickelRollValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            style="@style/currency_totals_style"
+            app:layout_constraintBottom_toBottomOf="@+id/nickelsRollTextView"
+            app:layout_constraintStart_toEndOf="@+id/nickelsRollTextView"
+            app:layout_constraintTop_toTopOf="@+id/nickelsRollTextView" />
+
+        <TextView
+            android:id="@+id/dimesRollValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            style="@style/currency_totals_style"
+            app:layout_constraintBottom_toBottomOf="@+id/dimesRollTextView"
+            app:layout_constraintStart_toEndOf="@+id/dimesRollTextView"
+            app:layout_constraintTop_toTopOf="@+id/dimesRollTextView" />
+
+        <TextView
+            android:id="@+id/quartersRollValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            style="@style/currency_totals_style"
+            app:layout_constraintBottom_toBottomOf="@+id/quartersRollTextView"
+            app:layout_constraintStart_toEndOf="@+id/quartersRollTextView"
+            app:layout_constraintTop_toTopOf="@+id/quartersRollTextView" />
+
+        <TextView
+            android:id="@+id/oneDollarRollValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            style="@style/currency_totals_style"
+            app:layout_constraintBottom_toBottomOf="@+id/oneDollarRollTextView"
+            app:layout_constraintStart_toEndOf="@+id/oneDollarRollTextView"
+            app:layout_constraintTop_toTopOf="@+id/oneDollarRollTextView" />
+
+        <TextView
+            android:id="@+id/twoDollarsRollValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            style="@style/currency_totals_style"
+            app:layout_constraintBottom_toBottomOf="@+id/twoDollarsRollTextView"
+            app:layout_constraintStart_toEndOf="@+id/twoDollarsRollTextView"
+            app:layout_constraintTop_toTopOf="@+id/twoDollarsRollTextView" />
+
+        <TextView
+            android:id="@+id/fiveDollarsValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            style="@style/currency_totals_style"
+            app:layout_constraintBottom_toBottomOf="@+id/fiveDollarsTextView"
+            app:layout_constraintStart_toEndOf="@+id/fiveDollarsTextView"
+            app:layout_constraintTop_toTopOf="@+id/fiveDollarsTextView" />
+
+        <TextView
+            android:id="@+id/tenDollarsValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            style="@style/currency_totals_style"
+            app:layout_constraintBottom_toBottomOf="@+id/tenDollarTextView"
+            app:layout_constraintStart_toEndOf="@+id/tenDollarTextView"
+            app:layout_constraintTop_toTopOf="@+id/tenDollarTextView" />
+
+        <TextView
+            android:id="@+id/twentyDollarsValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            style="@style/currency_totals_style"
+            app:layout_constraintBottom_toBottomOf="@+id/twentyDollarsTextView"
+            app:layout_constraintStart_toEndOf="@+id/twentyDollarsTextView"
+            app:layout_constraintTop_toTopOf="@+id/twentyDollarsTextView" />
+
+        <TextView
+            android:id="@+id/fiftyDollarsValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            style="@style/currency_totals_style"
+            app:layout_constraintBottom_toBottomOf="@+id/fiftyDollarsTextView"
+            app:layout_constraintStart_toEndOf="@+id/fiftyDollarsTextView"
+            app:layout_constraintTop_toTopOf="@+id/fiftyDollarsTextView" />
+
+        <TextView
+            android:id="@+id/oneHundredDollarsValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            style="@style/currency_totals_style"
+            app:layout_constraintBottom_toBottomOf="@+id/oneHundredDollarsTextView"
+            app:layout_constraintStart_toEndOf="@+id/oneHundredDollarsTextView"
+            app:layout_constraintTop_toTopOf="@+id/oneHundredDollarsTextView" />
+
+        <TextView
+            android:id="@+id/totalAmountLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/total_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/totalAmountValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            style="@style/cash_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/totalAmountLabelTextView" />
+
+        <View
+            android:id="@+id/view_2"
+            style="@style/horizontal_rule_1"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/totalAmountValueTextView" />
+
+        <TextView
+            android:id="@+id/amountToRemoveTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/amount_to_remove_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_2" />
+
+        <TextView
+            android:id="@+id/amountToRemoveValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            style="@style/cash_to_remove"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amountToRemoveTextView" />
+        <View
+            android:id="@+id/view_3"
+            style="@style/horizontal_rule_1"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/amountToRemoveValueTextView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
